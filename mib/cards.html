@@ -1,0 +1,94 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <title>Insurance Cards - MEDICS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="../mib/index.html">MEDICS (MIB)</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../mib/index.html">Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="../mib/cards.html">Medical Cards</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../mib/premiums.html">Premiums</a>
+      </li>
+    </ul>
+    <span class="navbar-text my-2 my-lg-0">
+        Signed in as: Insurance Corp
+        <a class"nav-link" href="../index.html">Sign out</a>
+    </span>
+  </div>
+</nav>
+
+<main role="main" class="container" style="margin-top: 80px;">
+
+  <div class="starter-template">
+    <h1>Insurance Cards</h1>
+    <p class="lead">
+        These are cards for your insured customers, including pending and cancelled cards.<br/>
+    </p>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+            <th scope="col">Card Number</th>
+            <th scope="col">Name</th>
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">721577455131</th>
+            <td>John Smith</td>
+            <td>Active</td>
+            <td>
+                <a class="btn btn-info" href="#" onclick='confirm("Are you sure you want to freeze this card?") ? alert("Card frozen and disabled for use.") : ()=>{};'>Freeze</a>
+                <a class="btn btn-danger" href="#" onclick='confirm("Are you sure you want to cancel this card?") ? alert("Card cancelled.") : ()=>{};'>Cancel</a>
+            </td>
+            </tr>
+            <tr>
+            <th scope="row">853512258765</th>
+            <td>Peter Parker</td>
+            <td>Frozen</td>
+            <td>
+                <a class="btn btn-info" href="#" onclick='confirm("Are you sure you want to unfreeze this card?") ? alert("Card unfrozen and enabled for use.") : ()=>{};'>Unfreeze</a>
+                <a class="btn btn-danger" href="#" onclick='confirm("Are you sure you want to cancel this card?") ? alert("Card cancelled.") : ()=>{};'>Cancel</a>
+            </td>
+            </tr>
+            <tr>
+            <th scope="row">950714904447</th>
+            <td>Jane Grey</td>
+            <td>Cancelled</td>
+            <td></td>
+            </tr>
+            <tr>
+            <th scope="row">221254574124</th>
+            <td>Matt Thompson</td>
+            <td>Pending</td>
+            <td>
+                <a class="btn btn-success" href="#" onclick='alert("Card approved.");'>Approve</a>
+                <a class="btn btn-danger" href="#" onclick='alert("Card denied.");'>Deny</a>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+
+</main><!-- /.container -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
