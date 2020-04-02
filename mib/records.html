@@ -1,7 +1,7 @@
 <!doctype html>
   <head>
     <meta charset="utf-8">
-    <title>Insurance Premiums - MEDICS</title>
+    <title>Patient Records - MEDICS</title>
 
     <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -23,10 +23,10 @@
       <li class="nav-item">
         <a class="nav-link" href="../mib/cards.html">Medical Cards</a>
       </li>
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="../mib/premiums.html">Premiums</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="../mib/records.html">Patient Records</a>
       </li>
     </ul>
@@ -40,80 +40,42 @@
 <main role="main" class="container" style="margin-top: 80px;">
 
   <div class="starter-template">
-    <h1>Insurance Premiums</h1>
+    <h1>Patient Records</h1>
     <p class="lead">
-        These are the paid and unpaid premiums for your insured customers.<br/>
-        Reminder emails are sent out automatically and require no action on your part.
+        These are patient records and claim amounts for your insured customers, provided by directly by their treating hospitals.<br/>
+        If you have any issues with an uploaded record, please contact the hospital directly.
     </p>
     <table class="table table-hover">
         <thead>
             <tr>
-            <th scope="col">#</th>
+            <th scope="col">Date</th>
             <th scope="col">Name</th>
-            <th scope="col">Month</th>
-            <th scope="col">Status</th>
-            <th scope="col">Amount</th>
+            <th scope="col">Hospital</th>
+            <th scope="col">Claim Amount</th>
+            <th scope="col">Record</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-            <th scope="row">9</th>
-            <td>John Smith</td>
-            <td>March 2020</td>
-            <td>Paid</td>
-            <th>$192.42</th>
-            </tr>
-            <tr>
-            <th scope="row">8</th>
-            <td>Peter Parker</td>
-            <td>March 2020</td>
-            <td>Paid</td>
-            <th>$163.98</th>
-            </tr>
-            <tr>
-            <th scope="row">7</th>
+            <th scope="row">2020-02-14</th>
             <td>Jane Grey</td>
-            <td>March 2020</td>
-            <td class="text-danger">Unpaid</td>
-            <th>$247.29</th>
+            <td>Northwestern Hospital</td>
+            <td>$56,395.93</td>
+            <td><a href="https://www.google.com/search?tbm=isch&q=pretend%20this%20is%20an%20uploaded%20medical%20record&tbs=imgo:1" target="_blank">Record.pdf</a></td>
             </tr>
             <tr>
-            <th scope="row">6</th>
-            <td>Peter Parker</td>
-            <td>February 2020</td>
-            <td>Paid</td>
-            <th>$132.95</th>
-            </tr>
-            <th scope="row">5</th>
+            <th scope="row">2020-01-06</th>
             <td>John Smith</td>
-            <td>February 2020</td>
-            <td>Paid</td>
-            <th>$192.42</th>
-            </tr>
-            <th scope="row">4</th>
-            <td>Jane Grey</td>
-            <td>February 2020</td>
-            <td class="text-danger">Unpaid</td>
-            <th>$247.29</th>
-            </tr>
-            <th scope="row">3</th>
-            <td>Jane Grey</td>
-            <td>January 2020</td>
-            <td>Paid</td>
-            <th>$247.29</th>
+            <td>Gotham City Heals</td>
+            <td>$2,399.34</td>
+            <td><a href="https://www.google.com/search?tbm=isch&q=pretend%20this%20is%20an%20uploaded%20medical%20record&tbs=imgo:1" target="_blank">Record.pdf</a></td>
             </tr>
             <tr>
-            <th scope="row">2</th>
+            <th scope="row">2020-01-03</th>
             <td>John Smith</td>
-            <td>January 2020</td>
-            <td>Paid</td>
-            <th>$192.42</th>
-            </tr>
-            <th scope="row">1</th>
-            <td>Peter Parker</td>
-            <td>January 2020</td>
-            <td>Paid</td>
-            <th>$132.95</th>
+            <td>Gotham City Heals</td>
+            <td>$568.23</td>
+            <td><a href="https://www.google.com/search?tbm=isch&q=pretend%20this%20is%20an%20uploaded%20medical%20record&tbs=imgo:1" target="_blank">Record.pdf</a></td>
             </tr>
         </tbody>
     </table>
