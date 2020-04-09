@@ -1,0 +1,83 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <title>Insurance Premiums - MEDICS</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="../mib/index.html">MEDICS (Hospital)</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="../hospital/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../hospital/records.html">Upload Patient Record</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="../hospital/payments.html">Check Payments</a>
+      </li>
+    </ul>
+    <span class="navbar-text my-2 my-lg-0">
+        Signed in as: Gotham City Hospital
+        <a class"nav-link" href="../index.html">Sign out</a>
+    </span>
+  </div>
+</nav>
+
+<main role="main" class="container" style="margin-top: 80px;">
+
+  <div class="starter-template">
+    <h1>Paid Insurance Claims</h1>
+    <p class="lead">
+        These are the payments you've received from insurance claims.
+    </p>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Name</th>
+            <th scope="col">Insurance Bureau</th>
+            <th scope="col">Claim Amount</th>
+            <th scope="col">Record</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th scope="row">2020-01-06</th>
+            <td>John Smith</td>
+            <td>Insurance Corp</td>
+            <td>$2,399.34</td>
+            <td><a href="../mib/Record.pdf" target="_blank">Record.pdf</a></td>
+            </tr>
+            <tr>
+            <th scope="row">2020-01-03</th>
+            <td>John Smith</td>
+            <td>Insurance Corp</td>
+            <td>$568.23</td>
+            <td><a href="../mib/Record.pdf" target="_blank">Record.pdf</a></td>
+            </tr>
+            <tr>
+            <th scope="row">2019-11-14</th>
+            <td>June Slader</td>
+            <td>Health Corp</td>
+            <td>$45.00</td>
+            <td><a href="../mib/Record.pdf" target="_blank">Record.pdf</a></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+
+</main><!-- /.container -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
